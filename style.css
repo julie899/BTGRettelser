@@ -1,0 +1,1104 @@
+/* Font fra Google font */
+@import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    margin:0;
+    padding:0;
+    font-family: var(--primary-font);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Primær farver*/
+
+:root {
+    --beige-color: #FFF7EA;
+    --brun-color: #90755C;
+    --mørkebrun-color:#241C15;
+    --primary-font: 'KoHo', sans-serif;
+}
+
+/* Overlay navitation */
+
+header.black {
+    
+    background:var(--mørkebrun-color);
+    height: 135px;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+/* Logo */
+
+.logo {  
+        width: 40px;
+        float: left;
+        margin: 30px 0 0 90px;
+        opacity: 0.75;
+}
+
+/* Navigation desktop */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar, ul, li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.navbar, li, a{
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;
+    color:var(--beige-color);
+    font-family: var(--primary-font);
+    font-weight: 500 ;
+}
+/* Hamburger navigation menu starter fra 1424 px - Kilde: https://sharkcoder.com/blocks/hamburger 
+Lokaliseret d. 29-05-2021*/
+
+.menu__icon {
+    height: 32px;
+    width: 43px;
+    margin: 3%;
+    position: absolute;
+    top: 10px;
+    right: 3%;
+    display: inline-block;
+    vertical-align: middle;
+    z-index: 20;
+}
+  
+.menu__icon span {
+    display: block;
+    background: var(--brun-color);
+    width: 100%;
+    height: 4px;
+    margin-top: -2px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.menu__icon:before,
+.menu__icon:after {
+    content: "";
+    display: block;
+    background: var(--brun-color);
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    transform-origin: center center;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+.menu__icon:before {
+    top: 2px;
+    margin-top: -2px;
+}
+
+.menu__icon:after {
+    bottom: 2px;
+    margin-bottom: -2px;
+}
+.menu_shown .menu__icon span {
+    background: transparent;
+}
+
+.menu_shown .menu__icon:before {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.menu_shown .menu__icon:after {
+    bottom: 50%;
+    transform: rotate(-45deg);
+}
+.mobile.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    padding: 120px 0px 0px 0px ;;
+    background: var(--mørkebrun-color);
+    z-index: 10;
+    transition: all .4s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.menu__icon.mobile { 
+    margin: 30px;
+    padding: 0px 0px 0px 20px;
+}
+
+
+.menu_shown .mobile.menu {
+    transform: translateX(0);
+}
+
+.mobile .menu__item {
+    display: block;
+    line-height: 2;
+    padding: 25px 0;
+}
+
+
+/*forside overskriver og knap */
+  
+
+#forside {
+    background-image: url(images/baggrund.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+h2 {
+    text-align: center;
+    color: var(--beige-color);
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 53px;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    color: var(--brun-color);
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 3px;
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.overskrift {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 12rem;
+}
+
+/* Knap til Just Eat*/
+
+.knap {
+    background-color: var(--brun-color);
+    color: var(--beige-color);
+    border: none;
+    text-align: center;
+    border-radius: 45px;
+    cursor: pointer;
+    padding: 17px 50px;
+    font-size: 35px;
+}
+
+.pilimg {
+    padding-top: 150px;
+}
+
+/* Animation fra W3SCHOOL - Link: https://www.w3schools.com/css/css3_animations.asp 
+Lokaliseret d. 28-05-2021*/
+
+.pil {
+    position: relative;
+    animation-name: animation;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    padding: 0;
+}
+
+@keyframes animation {
+    from {top: 0px;}
+    to {top: 5px; }
+}
+
+/* Section 3 - Velkommen */
+
+#velkommen {
+    background-color: var(--beige-color);
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.bagels2 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+.bagels {
+    margin: 150px;
+}
+
+.overskrift2 {
+    color: var(--mørkebrun-color);
+    line-height: 1.25;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+span {
+    color: var(--brun-color);
+}
+
+.border {
+    border-bottom: 5px solid var(--brun-color);
+}  
+
+.tekst {
+    margin-right: 100px;
+    padding-top: 15px;
+    line-height: 1.5;
+    font-size: 25px;
+    color: var(--mørkebrun-color);
+}
+
+/* billede af ejerne */
+
+.ejerne {
+    padding: 100px;
+    padding-top: 180px;
+    padding-left: 0px;
+    padding-right: 120px;
+    width: 450px;
+    height: 450px;
+}
+
+/* Section 3 - byg megabagel starter her */
+
+#bagels {
+    background-color: var(--brun-color);
+    width: 100%;
+    height: 150vh;
+    float: left;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;    
+}
+
+.overskrift3 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.trin {
+    color: var(--mørkebrun-color);
+    border-bottom: 5px solid var(--mørkebrun-color);
+    font-weight: 500;    
+}
+
+.brødtekst{
+    margin: 100px;
+    padding-top: 20px;
+}
+
+.tekst2 {
+    margin-right: 90px;
+    padding-top: 1px;
+    line-height: 1.5;
+    font-size: 25px;
+    color: var(--beige-color);
+}
+
+.tal {
+    background-color: #DDA136;
+    border-radius: 200px;
+    padding: 9px 15px;
+    border: 4px solid #721A0C;
+    font-weight: bold;
+}
+
+.tal2 {
+    background-color: #DDA136;
+    border-radius: 200px;
+    padding: 8px 17px;
+    border: 4px solid #721A0C;
+    font-weight: bold;
+}
+
+/*billede af Megabagels på desktop */
+
+.megabagel {
+    width: 750px;
+    height: 900px;
+    padding-top: 80px;
+}
+
+
+/* Menukort */
+
+#menu {
+    background-color: var(--mørkebrun-color);
+    width: 100%;
+    height: 130vh;
+    float: left;
+}
+
+.overskrift4 {
+    text-align: left;
+    font-size: 32px;
+    font-weight: 500;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+
+.menuen {
+    border-bottom: 5px solid var(--beige-color);
+    font-weight: 700;
+    color: var(--beige-color);
+}
+
+.pris {
+    color: var(--beige-color);
+    float: right;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.menu-liste {
+    padding: 0 150px;
+    padding-top: 25px;
+    color: var(--beige-color);
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 0.1;
+}
+
+/* Arrangementer - stylling af billede */
+
+#arrangementer{
+    background-color: var(--beige-color);
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;  
+}
+
+.arrangementer1 {
+    margin-top: 150px;
+    padding-left: 150px;
+}
+
+.overskrift5 {
+    color: var(--mørkebrun-color);
+    line-height: 1.25;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+}
+
+span {
+    color: var(--brun-color);
+}
+ 
+.tekst3 {
+    margin-right: 100px;
+    padding-top: 15px;
+    line-height: 1.5;
+    font-size: 25px;
+    color: var(--mørkebrun-color);
+}
+
+.bagel3 {
+    padding: 100px;
+    padding-top: 180px;
+    padding-right: 0px;
+    padding-left: 120px;
+    width: 450px;
+    height: 450px;
+}
+
+/* Sectionen 6 - åbningstider*/
+
+#åbningstider {
+    background-color: var(--brun-color);
+    width: 100%;
+    height: 130vh;
+    float: left;
+}
+
+.åben {
+    border-bottom: 5px solid var(--mørkebrun-color);
+    font-weight: 700;
+    font-size: 35px;
+    color: var(--mørkebrun-color);
+    float: left;
+    
+}
+
+.ugedag {
+   padding-top: 40px;
+   font-size: 30px;
+   font-weight: 600;
+   margin-right: 30px;
+}
+
+.dage {
+
+    margin: 0px 0px 0px 150px;
+}
+
+
+.tider {
+    display: flex;
+    flex-direction: row;
+    color: var(--beige-color);
+    padding-top: 120px;
+}
+
+.tid {
+    position: absolute;
+    padding-top: 95px;
+    font-size: 30px;
+    line-height: 1.42;
+    padding-left: 500px;
+    
+ 
+}
+/* Google maps og adresse */
+
+div.lokation {
+    background-color: var(--mørkebrun-color);
+    position: absolute;
+    right: 0;
+    width: 800px;
+    height: 470px;
+    margin-top: 130px;
+    display: flex;
+    
+}
+
+.maps {
+    padding: 20px;
+}
+
+.adresse {
+    font-size: 25px;
+    line-height: 1.25;
+}
+
+/* Instagram gallery */
+
+.SoMe {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.insta {
+    flex: 20%;
+    max-width: 20%
+}
+
+/* footer */
+
+footer {
+    background-color: var(--mørkebrun-color);
+    color: var(--beige-color);
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.informationer {
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 70px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.overskriftfoot {
+    font-size: 20px;
+    
+}
+/* SoMe iconer */ 
+
+.socialemedier .icon {
+    padding: 0px 20px 0px 0px;
+}
+
+.socialemedier{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Responsiv */
+
+
+/* Desktop fra skræme på/over 1424 */ 
+
+@media screen and (min-width: 1424px) {
+
+/* billede burgermenu fjernes */
+
+    .mobile {
+        display: none;
+    }
+    .megabagel2 {
+        display: none;
+    }
+    }
+
+/*mini pc og tablet skræme på/under 1423 - designet til 1025px for en tablet */
+
+@media screen and (max-width: 1423px) {
+
+    
+    .navbar {
+        padding: 0px 0px 0px 0px;
+    }
+    /* Logo mindre */
+
+    .logo {
+        margin: 30px 0px 0px 0px;
+    }
+
+     /* Icon burgermenu */
+
+    .menu__icon.mobile {
+        color: var(--brun-color);
+    }
+
+    /* navigatin */
+
+    .desktop-menu {
+        display: none;
+                }
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .navbar, ul, li {
+        margin: 0;
+            }
+
+    li {
+        padding: 0px
+    }
+
+     /* Icon pil  */
+            
+     .pilimg {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    /* fjern billede */
+
+    .megabagel {
+        display: none;
+    }
+
+    .megabagel2 {
+        height: 370px;
+        width: 370px;
+    }
+
+    /* Section 2 */
+
+    #velkommen {
+        height: 85vh;
+    }
+    .overskrift2 {
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top:90px;
+    }
+
+    .tekst {
+        font-size: 23px;
+        padding-left: 20px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .bagels {
+        margin: 0px;
+    }
+
+    /* billede af ejerne */
+
+    .ejerne {
+        padding: 0;
+        padding-top: 120px;
+        padding-left: 50px;
+        padding-right: 30px;
+        width: 350px;
+        height: 350px;
+        }
+    
+
+    /* Section 3 */
+
+    #bagels{
+        height: 165vh;
+    }
+
+    .overskrift3 {
+        font-size: 30px;
+            
+    }
+    
+    .section3 {
+        flex-direction: column-reverse;
+        
+    }
+
+    .brødtekst{
+        margin: 80px 10px 0px 20px;
+    }
+        
+
+    .tekst2{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 23px;
+    }
+
+    /*billede af Megabagels */
+
+    .megabagel2 {
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+        width: 500px;     
+    }
+
+    /* Section 4 - menukort */
+    
+    #menu {
+        height: 150vh;
+    }
+
+    .overskrift4 {
+
+        font-size: 30px;
+        padding: 40px 0px 0px 20px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+    .pris {
+        font-size: 25px;
+    }
+
+    p{
+        font-size: 23px;
+    } 
+
+    .menu-liste {
+        line-height: 1.1;
+        font-size: 23px;
+        padding: 25px 20px 0px;
+    }
+
+    .bagel3 {
+        padding: 120px 50px 0px 30px;
+        width: 350px;
+        height: 350px;
+
+        }
+
+    /* Section 5  */
+
+    #arrangementer {
+        height: 85vh;
+    }
+
+    .section4 {
+        padding-top: 150px;
+    }
+
+    .arrangementer1 {
+        margin: 90px 0px 0px 0px;
+        padding: 0px 20px 0px 15px
+    }
+
+    .overskrift5 {
+        font-size: 30px;
+    }
+
+    .tekst3 {
+        font-size: 23px;
+        margin: 23px 23px 23px 0px; 
+    }
+
+    /* Section 6  */
+
+    #åbningstider {
+        height: 115vh;
+    }
+
+    /* Google maps */
+
+    .maps {
+        width: 380px;
+        height: 300px;
+        padding: 0;
+        padding: 35px;
+    }
+
+    div.lokation {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        height: 625px;
+
+    }
+
+    /* Adresse */
+
+    .adresse {
+        font-size: 23px;
+        margin: 20px 20px 0px 35px;   
+
+    }
+
+    .tider {
+        padding: 0px 0px 0px;
+    }
+
+    .tid { 
+        padding: 200px 0px 0px 350px;
+        line-height: 1.6;
+        font-size: 24px;  
+    }
+
+    .ugedag h4 {
+        padding-top: 5px;
+        line-height: 1.1;
+        font-size: 23px;
+    }
+
+    .overskrift6 {
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+    .dage {
+        margin: 80px 10px 0px 20px;
+    }
+
+    /* footer*/
+
+    .overskriftfoot {
+        font-size: 20px;
+    }
+
+    .informationer p {
+        font-size: 15px;
+    }
+}
+
+/*mobil designet ud fra 375px */
+
+@media screen and (max-width: 768px) {
+
+/* navigation */
+
+    .desktop-menu {
+    display: none;
+    }
+
+    .header {
+        width:100%;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    h3 {
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    /* just eat knap */
+
+    .knap {
+        font-size: 25px;
+    }
+
+    /* Section 2*/
+
+    #velkommen {
+        height: 115vh;
+    }
+
+    .overskrift2 {
+        font-size: 22px;
+        padding-left: 10px;
+    }
+
+    .tekst {
+        font-size: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+    }
+
+    .bagels2 {
+        flex-direction: column;
+    }
+
+    .bagels {
+        margin: 0px;
+    }
+    
+    /* billede af ejerne */
+    
+    .ejerne {
+        padding: 30px 10px 30px 10px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .section3 {
+        flex-direction: column-reverse;
+    }
+
+    .overskrift3 {
+        padding-top: 75px;
+        margin: 0;
+        padding-left: 10px;
+        font-size: 22px;
+    }
+
+    .brødtekst {
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .tekst2 {
+        margin: 0;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    /*billede af Megabagels */
+
+    .megabagel {
+        display: none;
+    }
+
+    .megabagel2 {
+        height: 370px;
+        width: 370px;
+    }
+
+    /* Section 3 */
+
+    #bagels {
+        height: 155vh;
+    }
+
+    .overskrift4 {
+        padding: 0;
+        font-size: 22px;
+        padding-left: 10px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .menu-liste {
+        padding: 0;
+        font-size: 20px;
+        line-height: 1.1;
+        padding: 10px;
+    }
+
+     /* Section 4 */
+
+    #menu {
+        height: 120vh;
+    }
+
+    /* Section 5 */
+
+    #arrangementer {
+        height: 110vh;
+    }
+
+    .section4 {
+        flex-direction: column;
+    }
+
+    .bagel3 {
+        padding: 0;
+        width: 345px;
+        height: 345px;
+        padding-left: 14px;
+    }
+
+    .arrangementer1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .overskrift5 {
+        font-size: 22px;
+        padding: 0;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .tekst3 {
+        margin: 0;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /* Section 6 */
+
+    #åbningstider {
+        height: 142vh;
+    }
+
+    .dage {
+        padding-top: 65px;
+    }
+
+    .tider {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .lokation {
+        flex-direction: column; 
+    }
+
+    div.lokation {
+       position: relative; 
+       width: 375px;
+       height: 600px;
+       margin: 0;
+       margin-top: 10px;
+    }
+
+    /* Google Maps*/
+
+    .maps {
+        width: 300px;
+        height: 300px;
+        padding: 0;
+        padding: 35px;
+    }
+
+    .åben {
+        font-size: 22px;
+    }
+
+    .overskrift6 {
+    padding-left: 10px;
+    padding-top: 55px;
+    }
+
+    .dage {
+        margin: 0;
+    }
+
+    .tid {
+        padding: 0;
+        padding-left: 300px;
+        padding-top: 210px;
+        font-size: 20px;
+        line-height: 1.65;
+    }
+
+    .ugedag {
+        padding: 0;
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    /* Adresse */
+
+    .adresse {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    /* Insta Gallari */
+
+    .insta {
+        flex: 50%;
+        max-width: 50%
+    }
+    /* Footer*/
+
+    .info {
+        flex-direction: column;
+    }
+
+    .informationer {
+        padding: 0;
+        padding-left: 90px;
+        padding-right: 90px;
+        padding-top: 30px;
+    }
+
+
+    /* SoMe Iconer*/
+
+    .socialemedier {
+        padding-bottom: 30px;
+    }
+}
+    
