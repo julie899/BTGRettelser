@@ -275,6 +275,19 @@ span {
     color: var(--mørkebrun-color);
 }
 
+.tekst-link {
+    color: var(--mørkebrun-color);
+    padding: 0;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.link-til-menu {
+    color: var(--mørkebrun-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* billede af ejerne */
 
 .ejerne {
@@ -357,7 +370,7 @@ span {
 #menu {
     background-color: var(--mørkebrun-color);
     width: 100%;
-    height: 130vh;
+    height: 275vh;
     float: left;
 }
 
@@ -366,7 +379,7 @@ span {
     font-size: 32px;
     font-weight: 500;
     padding-left: 150px;
-    padding-top: 40px;
+    padding-top: 110px;
 }
 
 .menuen {
@@ -392,6 +405,24 @@ h4 {
     font-weight: 500;
     font-size: 23px;
     line-height: 0.1;
+}
+
+.underoverskrift {
+    text-align: left;
+    font-size: 32px;
+    margin: 90px 0px 40px 0px;
+}
+
+.JUSTEAT-promovering {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.JUSTEAT-tekst {
+    color: var(--beige-color);
+    font-size: 25px;
+    padding-top: 20px;
 }
 
 /* Arrangementer - stylling af billede */
@@ -512,6 +543,10 @@ div.lokation {
     line-height: 1.25;
 }
 
+.kontrolrapport-link {
+    padding: 0;
+}
+
 /* Instagram gallery */
 
 .SoMe {
@@ -618,11 +653,27 @@ footer {
         padding: 0px
     }
 
+    .burgermenu-icon {
+        padding: 0;
+    }
+
+    .boks-ikoner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .fb {
+        padding: 20px;
+    }
+
+
      /* Icon pil  */
             
      .pilimg {
         padding: 0;
-        padding-top: 50px;
+        padding-top: 80px;
     }
 
     /* fjern billede */
@@ -652,6 +703,12 @@ footer {
         padding-left: 20px;
         padding-right: 10px;
         margin: 0;
+        padding-bottom: 15px;
+    }
+
+    .tekst-link {
+        padding-left: 20px;
+        font-size: 23px;
     }
 
     .bagels {
@@ -710,13 +767,13 @@ footer {
     /* Section 4 - menukort */
     
     #menu {
-        height: 150vh;
+        height: 330vh;
     }
 
     .overskrift4 {
 
         font-size: 30px;
-        padding: 40px 0px 0px 20px;
+        padding: 110px 0px 0px 20px;
     }
 
     h4 {
@@ -734,6 +791,14 @@ footer {
         line-height: 1.1;
         font-size: 23px;
         padding: 25px 20px 0px;
+    }
+
+    .underoverskrift {
+        font-size: 30px;
+    }
+
+    .JUSTEAT-tekst {
+        font-size: 23px;
     }
 
     .bagel3 {
@@ -788,7 +853,7 @@ footer {
         flex-direction: column;
         width: 450px;
         height: 625px;
-
+        padding-bottom: 50px;
     }
 
     /* Adresse */
@@ -823,6 +888,13 @@ footer {
     .dage {
         margin: 80px 10px 0px 20px;
     }
+    .kontrolrapport-link {
+        padding-left: 37px;
+    }
+
+    .kontrolrapport-billde {
+        padding-top: 20px;
+    }
 
     /* footer*/
 
@@ -854,6 +926,20 @@ footer {
         flex-direction: column;
         margin: 0;
     }
+    .burgermenu-icon {
+        padding: 0;
+    }
+
+    .boks-ikoner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    .fb {
+        padding: 20px;
+    }
 
     h3 {
         font-size: 20px;
@@ -864,6 +950,10 @@ footer {
         font-size: 25px;
         padding-bottom: 20px;
     }
+
+    .pilimg {
+        padding-top: 140px;
+    }
     /* just eat knap */
 
     .knap {
@@ -873,7 +963,7 @@ footer {
     /* Section 2*/
 
     #velkommen {
-        height: 115vh;
+        height: 120vh;
     }
 
     .overskrift2 {
@@ -886,6 +976,12 @@ footer {
         padding-left: 10px;
         padding-right: 10px;
         margin: 0;
+    }
+
+    .tekst-link {
+        font-size: 20px;
+        padding: 0;
+        padding-left: 10px;
     }
 
     .bagels2 {
@@ -944,9 +1040,9 @@ footer {
     }
 
     .overskrift4 {
-        padding: 0;
         font-size: 22px;
         padding-left: 10px;
+        padding-top: 120px;
     }
 
     h4 {
@@ -963,7 +1059,19 @@ footer {
      /* Section 4 */
 
     #menu {
-        height: 120vh;
+        height: 285vh;
+    }
+
+    .underoverskrift {
+        font-size: 22px;
+        margin: 0;
+        margin: 50px 0px 10px 0px;
+    }
+
+    .JUSTEAT-tekst {
+        font-size: 20px;
+        padding-left: 5px;
+        text-align: center;
     }
 
     /* Section 5 */
@@ -1004,7 +1112,7 @@ footer {
     /* Section 6 */
 
     #åbningstider {
-        height: 142vh;
+        height: 176vh;
     }
 
     .dage {
@@ -1026,6 +1134,11 @@ footer {
        height: 600px;
        margin: 0;
        margin-top: 10px;
+       padding-bottom: 70px;
+    }
+
+    .kontrolrapport-link {
+        padding-left: 47px;
     }
 
     /* Google Maps*/
